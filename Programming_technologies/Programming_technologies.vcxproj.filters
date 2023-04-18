@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Исходные файлы\5A">
+      <UniqueIdentifier>{6bebd49f-c49f-46e5-ba95-d22df4d2621e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\5A">
+      <UniqueIdentifier>{fc5a9499-b5c0-43fa-92ed-f9e970779332}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1A.cpp">
@@ -27,5 +33,28 @@
     <ClCompile Include="4B.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Исходные файлы\5A</Filter>
+    </ClCompile>
+    <ClCompile Include="Watch.cpp">
+      <Filter>Исходные файлы\5A</Filter>
+    </ClCompile>
+    <ClCompile Include="MechanicalWatch.cpp">
+      <Filter>Исходные файлы\5A</Filter>
+    </ClCompile>
+    <ClCompile Include="DigitalWatch.cpp">
+      <Filter>Исходные файлы\5A</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DigitalWatch.h">
+      <Filter>Файлы заголовков\5A</Filter>
+    </ClInclude>
+    <ClInclude Include="MechanicalWatch.h">
+      <Filter>Файлы заголовков\5A</Filter>
+    </ClInclude>
+    <ClInclude Include="Watch.h">
+      <Filter>Файлы заголовков\5A</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
