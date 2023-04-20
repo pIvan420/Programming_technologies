@@ -1,13 +1,11 @@
-#pragma once
+﻿#pragma once
 #include "Watch.h"
-class MechanicalWatch : private Watch
+class MechanicalWatch : public Watch
 {
 private:
-	std::string mechanism_type;
+	string mechanism_type;
 public:
-	MechanicalWatch(std::string name, int price, std::string country, std::string mechanism_type) : Watch(name, price, country) {
-		this->mechanism_type = mechanism_type;
-	}
-	std::string get_mechanism_type();
+	MechanicalWatch(string name, int price, string country, string mechanism_type);
+	~MechanicalWatch();
+	string get_mechanism_type();
 };
-

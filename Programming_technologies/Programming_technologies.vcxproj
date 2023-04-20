@@ -131,8 +131,8 @@
     <ClCompile Include="2C.cpp" />
     <ClCompile Include="3A.cpp" />
     <ClCompile Include="4B.cpp" />
+    <ClCompile Include="5A.cpp" />
     <ClCompile Include="DigitalWatch.cpp" />
-    <ClCompile Include="Main.cpp" />
     <ClCompile Include="MechanicalWatch.cpp" />
     <ClCompile Include="Watch.cpp" />
   </ItemGroup>
