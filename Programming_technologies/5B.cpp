@@ -39,7 +39,7 @@ void project_menu() {
 						cout << "да" << endl;
 					}
 					else {
-						cout << "нет" << endl;
+						cout << "нет" << endl;	
 					}
 					break;
 				}
@@ -88,9 +88,10 @@ void project_menu() {
 	}
 }
 
-int main() {
+int main5() {
 	setlocale(LC_ALL, "");
 	project_menu();
+	return 0;
 }
 
 

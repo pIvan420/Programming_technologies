@@ -9,12 +9,15 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
+    <Filter Include="Исходные файлы\5B">
+      <UniqueIdentifier>{3a365a07-9346-4e45-8a11-8642a30a3002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\6B">
+      <UniqueIdentifier>{8d038700-12ed-48ec-840a-6735c8010f83}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Файлы ресурсов">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
-    <Filter Include="Исходные файлы\5A">
-      <UniqueIdentifier>{3a365a07-9346-4e45-8a11-8642a30a3002}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -30,17 +33,29 @@
     <ClCompile Include="4B.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="5A.cpp">
-      <Filter>Исходные файлы\5A</Filter>
+    <ClCompile Include="5B.cpp">
+      <Filter>Исходные файлы\5B</Filter>
     </ClCompile>
     <ClCompile Include="Watch.cpp">
-      <Filter>Исходные файлы\5A</Filter>
+      <Filter>Исходные файлы\5B</Filter>
     </ClCompile>
     <ClCompile Include="MechanicalWatch.cpp">
-      <Filter>Исходные файлы\5A</Filter>
+      <Filter>Исходные файлы\5B</Filter>
     </ClCompile>
     <ClCompile Include="DigitalWatch.cpp">
-      <Filter>Исходные файлы\5A</Filter>
+      <Filter>Исходные файлы\5B</Filter>
+    </ClCompile>
+    <ClCompile Include="6B.cpp">
+      <Filter>Исходные файлы\6B</Filter>
+    </ClCompile>
+    <ClCompile Include="Watch2.cpp">
+      <Filter>Исходные файлы\6B</Filter>
+    </ClCompile>
+    <ClCompile Include="DigitalWatch2.cpp">
+      <Filter>Исходные файлы\6B</Filter>
+    </ClCompile>
+    <ClCompile Include="MechanicalWatch2.cpp">
+      <Filter>Исходные файлы\6B</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -51,6 +66,15 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="MechanicalWatch.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Watch2.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="DigitalWatch2.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="MechanicalWatch2.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

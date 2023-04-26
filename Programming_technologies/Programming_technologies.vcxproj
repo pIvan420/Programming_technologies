@@ -131,15 +131,22 @@
     <ClCompile Include="2C.cpp" />
     <ClCompile Include="3A.cpp" />
     <ClCompile Include="4B.cpp" />
-    <ClCompile Include="5A.cpp" />
+    <ClCompile Include="5B.cpp" />
+    <ClCompile Include="6B.cpp" />
     <ClCompile Include="DigitalWatch.cpp" />
+    <ClCompile Include="DigitalWatch2.cpp" />
     <ClCompile Include="MechanicalWatch.cpp" />
+    <ClCompile Include="MechanicalWatch2.cpp" />
     <ClCompile Include="Watch.cpp" />
+    <ClCompile Include="Watch2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DigitalWatch.h" />
+    <ClInclude Include="DigitalWatch2.h" />
     <ClInclude Include="MechanicalWatch.h" />
+    <ClInclude Include="MechanicalWatch2.h" />
     <ClInclude Include="Watch.h" />
+    <ClInclude Include="Watch2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
