@@ -1,14 +1,14 @@
-#include "DigitalWatch2.h"
+п»ї#include "DigitalWatch2.h"
 #include "MechanicalWatch2.h"
 int Watch2::count;
 int get_random_price2();
 
 void project_menu2() {
-	DigitalWatch2* wws1 = new DigitalWatch2[6]{ DigitalWatch2("Casio G-SHOCK GA-900-4AER", get_random_price2(), "Япония", true), DigitalWatch2("Daniel Wellington DW00100510", get_random_price2(), "Швеция", true), DigitalWatch2("M2Z M2Z-200-001", get_random_price2(), "Италия", false),
-		DigitalWatch2("Garmin 010-02157-11", get_random_price2(), "США", false), DigitalWatch2("Casio Baby-G BLX-565-3E", get_random_price2(), "Япония", true), DigitalWatch2("The Electricianz ZZ-A1A/04-CRW", get_random_price2(), "Швейцария", false) };
-	MechanicalWatch2* wws2 = new MechanicalWatch2[6]{ MechanicalWatch2("Petite Coral Daniel Wellington DW00100515", get_random_price2(), "Швеция", "Кварцевый"), MechanicalWatch2("Continental 22001-GC156950", get_random_price2(), "Швейцария", "Кварцевый"),
-		MechanicalWatch2("CIGA Design M051-TT01-W6B", get_random_price2(), "Китай", "Механический с автоподзаводом"), MechanicalWatch2("Carl von Zeyten CVZ0031WH", get_random_price2(), "Германия", "Механический с автоподзаводом"),
-		MechanicalWatch2("Korloff 04WA1020033", get_random_price2(), "Франция", "Кварцевый"), MechanicalWatch2("Quadro Studio Daniel Wellington DW00100520", get_random_price2(), "Швеция", "Кварцевый") };
+	DigitalWatch2* wws1 = new DigitalWatch2[6]{ DigitalWatch2("Casio G-SHOCK GA-900-4AER", get_random_price2(), "РЇРїРѕРЅРёСЏ", true), DigitalWatch2("Daniel Wellington DW00100510", get_random_price2(), "РЁРІРµС†РёСЏ", true), DigitalWatch2("M2Z M2Z-200-001", get_random_price2(), "РС‚Р°Р»РёСЏ", false),
+		DigitalWatch2("Garmin 010-02157-11", get_random_price2(), "РЎРЁРђ", false), DigitalWatch2("Casio Baby-G BLX-565-3E", get_random_price2(), "РЇРїРѕРЅРёСЏ", true), DigitalWatch2("The Electricianz ZZ-A1A/04-CRW", get_random_price2(), "РЁРІРµР№С†Р°СЂРёСЏ", false) };
+	MechanicalWatch2* wws2 = new MechanicalWatch2[6]{ MechanicalWatch2("Petite Coral Daniel Wellington DW00100515", get_random_price2(), "РЁРІРµС†РёСЏ", "РљРІР°СЂС†РµРІС‹Р№"), MechanicalWatch2("Continental 22001-GC156950", get_random_price2(), "РЁРІРµР№С†Р°СЂРёСЏ", "РљРІР°СЂС†РµРІС‹Р№"),
+		MechanicalWatch2("CIGA Design M051-TT01-W6B", get_random_price2(), "РљРёС‚Р°Р№", "РњРµС…Р°РЅРёС‡РµСЃРєРёР№ СЃ Р°РІС‚РѕРїРѕРґР·Р°РІРѕРґРѕРј"), MechanicalWatch2("Carl von Zeyten CVZ0031WH", get_random_price2(), "Р“РµСЂРјР°РЅРёСЏ", "РњРµС…Р°РЅРёС‡РµСЃРєРёР№ СЃ Р°РІС‚РѕРїРѕРґР·Р°РІРѕРґРѕРј"),
+		MechanicalWatch2("Korloff 04WA1020033", get_random_price2(), "Р¤СЂР°РЅС†РёСЏ", "РљРІР°СЂС†РµРІС‹Р№"), MechanicalWatch2("Quadro Studio Daniel Wellington DW00100520", get_random_price2(), "РЁРІРµС†РёСЏ", "РљРІР°СЂС†РµРІС‹Р№") };
 	int length = sizeof(*wws1) / sizeof(wws1[0]);
 	Watch2* watchPointers1[6];
 	for (int i = 0; i < length; i++) {
@@ -21,30 +21,30 @@ void project_menu2() {
 	bool flag = true;
 	int answer;
 	while (flag) {
-		cout << "Что вы хотите сделать:\n1)Посмотеть элемент из массива электронных часов;\n2)Посмотреть элемент из массива механических часов;\n3)Посмотреть самый дорогой экземпляр электронных часов;\n" <<
-			"4)Посмотреть самый дорогой экземпляр механических часов;\n5)Посмотреть самый дорогой экземпляр часов;\n6)Посмотреть количество часов;\n7)Выйти из программы\nВвод: ";
+		cout << "Р§С‚Рѕ РІС‹ С…РѕС‚РёС‚Рµ СЃРґРµР»Р°С‚СЊ:\n1)РџРѕСЃРјРѕС‚РµС‚СЊ СЌР»РµРјРµРЅС‚ РёР· РјР°СЃСЃРёРІР° СЌР»РµРєС‚СЂРѕРЅРЅС‹С… С‡Р°СЃРѕРІ;\n2)РџРѕСЃРјРѕС‚СЂРµС‚СЊ СЌР»РµРјРµРЅС‚ РёР· РјР°СЃСЃРёРІР° РјРµС…Р°РЅРёС‡РµСЃРєРёС… С‡Р°СЃРѕРІ;\n3)РџРѕСЃРјРѕС‚СЂРµС‚СЊ СЃР°РјС‹Р№ РґРѕСЂРѕРіРѕР№ СЌРєР·РµРјРїР»СЏСЂ СЌР»РµРєС‚СЂРѕРЅРЅС‹С… С‡Р°СЃРѕРІ;\n" <<
+			"4)РџРѕСЃРјРѕС‚СЂРµС‚СЊ СЃР°РјС‹Р№ РґРѕСЂРѕРіРѕР№ СЌРєР·РµРјРїР»СЏСЂ РјРµС…Р°РЅРёС‡РµСЃРєРёС… С‡Р°СЃРѕРІ;\n5)РџРѕСЃРјРѕС‚СЂРµС‚СЊ СЃР°РјС‹Р№ РґРѕСЂРѕРіРѕР№ СЌРєР·РµРјРїР»СЏСЂ С‡Р°СЃРѕРІ;\n6)РџРѕСЃРјРѕС‚СЂРµС‚СЊ РєРѕР»РёС‡РµСЃС‚РІРѕ С‡Р°СЃРѕРІ;\n7)Р’С‹Р№С‚Рё РёР· РїСЂРѕРіСЂР°РјРјС‹\nР’РІРѕРґ: ";
 		cin >> answer;
 		switch (answer) {
 		case 1: {
 			int elem;
 			while (true) {
-				cout << "Какой экземпляр хотите (от 1 до 6): ";
+				cout << "РљР°РєРѕР№ СЌРєР·РµРјРїР»СЏСЂ С…РѕС‚РёС‚Рµ (РѕС‚ 1 РґРѕ 6): ";
 				cin >> elem;
 				if (elem <= 6 && elem >= 1) {
-					cout << "Название: " << wws1[elem].get_name() << endl;
-					cout << "Цена: " << wws1[elem].get_price() << endl;
-					cout << "Страна производства: " << wws1[elem].get_country() << endl;
-					cout << "Есть ли шагометр: ";
+					cout << "РќР°Р·РІР°РЅРёРµ: " << wws1[elem].get_name() << endl;
+					cout << "Р¦РµРЅР°: " << wws1[elem].get_price() << endl;
+					cout << "РЎС‚СЂР°РЅР° РїСЂРѕРёР·РІРѕРґСЃС‚РІР°: " << wws1[elem].get_country() << endl;
+					cout << "Р•СЃС‚СЊ Р»Рё С€Р°РіРѕРјРµС‚СЂ: ";
 					if (wws1[elem].is_pedometer()) {
-						cout << "да" << endl;
+						cout << "РґР°" << endl;
 					}
 					else {
-						cout << "нет" << endl;
+						cout << "РЅРµС‚" << endl;
 					}
 					break;
 				}
 				else {
-					cout << "Я не понял, что вы хотите. Введите еще раз.\n";
+					cout << "РЇ РЅРµ РїРѕРЅСЏР», С‡С‚Рѕ РІС‹ С…РѕС‚РёС‚Рµ. Р’РІРµРґРёС‚Рµ РµС‰Рµ СЂР°Р·.\n";
 				}
 			}
 			break;
@@ -52,44 +52,44 @@ void project_menu2() {
 		case 2: {
 			int elem;
 			while (true) {
-				cout << "Какой экземпляр хотите (от 1 до 6): ";
+				cout << "РљР°РєРѕР№ СЌРєР·РµРјРїР»СЏСЂ С…РѕС‚РёС‚Рµ (РѕС‚ 1 РґРѕ 6): ";
 				cin >> elem;
 				if (elem <= 6 && elem >= 1) {
-					cout << "Название: " << wws2[elem].get_name() << endl;
-					cout << "Цена: " << wws2[elem].get_price() << endl;
-					cout << "Страна производства: " << wws2[elem].get_country() << endl;
-					cout << "Тип механизма: " << wws2[elem].get_mechanism_type() << endl;
+					cout << "РќР°Р·РІР°РЅРёРµ: " << wws2[elem].get_name() << endl;
+					cout << "Р¦РµРЅР°: " << wws2[elem].get_price() << endl;
+					cout << "РЎС‚СЂР°РЅР° РїСЂРѕРёР·РІРѕРґСЃС‚РІР°: " << wws2[elem].get_country() << endl;
+					cout << "РўРёРї РјРµС…Р°РЅРёР·РјР°: " << wws2[elem].get_mechanism_type() << endl;
 					break;
 				}
 				else {
-					cout << "Я не понял, что вы хотите. Введите еще раз.\n";
+					cout << "РЇ РЅРµ РїРѕРЅСЏР», С‡С‚Рѕ РІС‹ С…РѕС‚РёС‚Рµ. Р’РІРµРґРёС‚Рµ РµС‰Рµ СЂР°Р·.\n";
 				}
 			}
 			break;
 		}
 		case 3: {
-			cout << "Самый дорогой экземпляр электронных часов: " << get_most_expensive_watch(watchPointers1, length).get_name() << endl;
+			cout << "РЎР°РјС‹Р№ РґРѕСЂРѕРіРѕР№ СЌРєР·РµРјРїР»СЏСЂ СЌР»РµРєС‚СЂРѕРЅРЅС‹С… С‡Р°СЃРѕРІ: " << get_most_expensive_watch(watchPointers1, length).get_name() << endl;
 			break;
 		}
 		case 4: {
-			cout << "Самый дорогой экземпляр механических часов: " << get_most_expensive_watch(watchPointers2, length).get_name() << endl;
+			cout << "РЎР°РјС‹Р№ РґРѕСЂРѕРіРѕР№ СЌРєР·РµРјРїР»СЏСЂ РјРµС…Р°РЅРёС‡РµСЃРєРёС… С‡Р°СЃРѕРІ: " << get_most_expensive_watch(watchPointers2, length).get_name() << endl;
 			break;
 		}
 		case 5: {
-			cout << "Самый дорогой экземпляр: " << get_most_expensive_watch(watchPointers1, watchPointers2, length).get_name() << endl;
+			cout << "РЎР°РјС‹Р№ РґРѕСЂРѕРіРѕР№ СЌРєР·РµРјРїР»СЏСЂ: " << get_most_expensive_watch(watchPointers1, watchPointers2, length).get_name() << endl;
 			break;
 		}
 		case 6: {
-			cout << "Количество часов: " << wws1[0].get_count() << endl;
+			cout << "РљРѕР»РёС‡РµСЃС‚РІРѕ С‡Р°СЃРѕРІ: " << wws1[0].get_count() << endl;
 			break;
 		}
 		case 7: {
-			cout << "Удачи!";
+			cout << "РЈРґР°С‡Рё!";
 			flag = false;
 			break;
 		}
 		default: {
-			cout << "Я не понял, что вы ввели. Повторите ввод (от 1 до 5)\n";
+			cout << "РЇ РЅРµ РїРѕРЅСЏР», С‡С‚Рѕ РІС‹ РІРІРµР»Рё. РџРѕРІС‚РѕСЂРёС‚Рµ РІРІРѕРґ (РѕС‚ 1 РґРѕ 5)\n";
 			break;
 		}
 		}
