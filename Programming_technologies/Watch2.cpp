@@ -35,26 +35,3 @@ bool Watch2::operator<(Watch2 ww2) {
 	}
 }
 
-Watch2 get_most_expensive_watch(Watch2** watches, int length) {
-	Watch2* curWatch = watches[0];
-	for (int i = 1; i < length; i++) {
-		if (curWatch < watches[i]) {
-			curWatch = watches[i];
-		}
-	}
-	return *curWatch;
-}
-Watch2 get_most_expensive_watch(Watch2** watches1, Watch2** watches2, int length) {
-	Watch2* curWatch = watches1[0];
-	for (int i = 1; i < length; i++) {
-		if (curWatch < watches1[i]) {
-			curWatch = watches1[i];
-		}
-	}
-	for (int i = 0; i < length; i++) {
-		if (curWatch < watches2[i]) {
-			curWatch = watches2[i];
-		}
-	}
-	return *curWatch;
-}
