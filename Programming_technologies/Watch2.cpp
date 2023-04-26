@@ -1,5 +1,5 @@
 #include "Watch2.h"
-#include "DigitalWatch.h"
+using namespace WatchNameSpace;
 
 Watch2::Watch2(string name, int price, string country) {
 	this->name = name;
@@ -44,7 +44,6 @@ Watch2 get_most_expensive_watch(Watch2** watches, int length) {
 	}
 	return *curWatch;
 }
-
 Watch2 get_most_expensive_watch(Watch2** watches1, Watch2** watches2, int length) {
 	Watch2* curWatch = watches1[0];
 	for (int i = 1; i < length; i++) {
@@ -59,4 +58,3 @@ Watch2 get_most_expensive_watch(Watch2** watches1, Watch2** watches2, int length
 	}
 	return *curWatch;
 }
-

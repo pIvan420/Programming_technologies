@@ -1,8 +1,6 @@
 #include "DigitalWatch2.h"
 #include "MechanicalWatch2.h"
-
 int Watch2::count;
-
 int get_random_price2();
 
 void project_menu2() {

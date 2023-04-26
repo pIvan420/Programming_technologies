@@ -1,5 +1,7 @@
 #pragma once
 #include "Watch2.h"
+using namespace WatchNameSpace;
+
 class MechanicalWatch2 : public Watch2
 {
 private:
