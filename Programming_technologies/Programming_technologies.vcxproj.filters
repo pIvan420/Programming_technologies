@@ -19,6 +19,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Исходные файлы\7A">
+      <UniqueIdentifier>{05582853-0cc3-4306-9c44-819b47a8be52}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1A.cpp">
@@ -56,6 +59,12 @@
     </ClCompile>
     <ClCompile Include="MechanicalWatch2.cpp">
       <Filter>Исходные файлы\6B</Filter>
+    </ClCompile>
+    <ClCompile Include="Watch7A.cpp">
+      <Filter>Исходные файлы\7A</Filter>
+    </ClCompile>
+    <ClCompile Include="Main7A.cpp">
+      <Filter>Исходные файлы\7A</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
