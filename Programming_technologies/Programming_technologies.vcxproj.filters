@@ -22,6 +22,9 @@
     <Filter Include="Исходные файлы\7A">
       <UniqueIdentifier>{05582853-0cc3-4306-9c44-819b47a8be52}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\8A">
+      <UniqueIdentifier>{0416f0af-0427-4ccc-8a78-9d75fcb9dad5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1A.cpp">
@@ -63,8 +66,11 @@
     <ClCompile Include="Watch7A.cpp">
       <Filter>Исходные файлы\7A</Filter>
     </ClCompile>
-    <ClCompile Include="Main7A.cpp">
+    <ClCompile Include="7A.cpp">
       <Filter>Исходные файлы\7A</Filter>
+    </ClCompile>
+    <ClCompile Include="8A.cpp">
+      <Filter>Исходные файлы\8A</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

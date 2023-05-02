@@ -133,9 +133,10 @@
     <ClCompile Include="4B.cpp" />
     <ClCompile Include="5B.cpp" />
     <ClCompile Include="6B.cpp" />
+    <ClCompile Include="8A.cpp" />
     <ClCompile Include="DigitalWatch.cpp" />
     <ClCompile Include="DigitalWatch2.cpp" />
-    <ClCompile Include="Main7A.cpp" />
+    <ClCompile Include="7A.cpp" />
     <ClCompile Include="MechanicalWatch.cpp" />
     <ClCompile Include="MechanicalWatch2.cpp" />
     <ClCompile Include="Watch.cpp" />
