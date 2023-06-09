@@ -8,7 +8,7 @@ int get_random_price3() {
 	return i;
 }
 
-int main() {
+int main8() {
 	setlocale(LC_ALL, "ru");
 	//Задание 1
 	int count = 1000;
@@ -50,5 +50,6 @@ int main() {
 	cout << "Очищаем первый вектор" << endl;
 	watches1.clear();
 	cout << "Длина первого вектора: " << watches1.size() << " элементов" << endl;
+	return 0;
 }
 

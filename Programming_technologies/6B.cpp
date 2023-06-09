@@ -96,10 +96,9 @@ void project_menu2() {
 	}
 }
 
-int main6() {
+int main() {
 	setlocale(LC_ALL, "");
 	project_menu2();
-	return 0;
 }
 
 
